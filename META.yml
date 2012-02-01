@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               DNS-PunyDNS
-version:            0.01
+version:            0.02
 abstract:           Interact with your SAPO dynamic DNS entries
 author:
     - Bruno Martins <bruno-martins@telecom.pt>
@@ -11,7 +11,10 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::More:  0
+    LWP::UserAgent:  0
+    Readonly:        0
+    Test::More:      0
+    XML::Simple:     0
 no_index:
     directory:
         - t
